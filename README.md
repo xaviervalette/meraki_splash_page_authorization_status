@@ -10,10 +10,20 @@ Example of python script to get the status of splash page authorization status :
             └── <SSID Number> (object)
                 └──isAuthorized (boolean)
 ```
+
+
 ```mermaid
-graph TD;
+flowchart TD
+
+subgraph Z[" "]
+direction LR
     getClientsId-->getSplashAuthorizationStatus;
+end
 ```
+
+API endpoint used : 
+- https://developer.cisco.com/meraki/api-latest/get-network-client-splash-authorization-status/
+- https://developer.cisco.com/meraki/api-latest/get-network-clients/
 
 ## Prerequisites
 - Meraki Dashboard access
